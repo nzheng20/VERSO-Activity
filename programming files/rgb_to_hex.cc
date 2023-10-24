@@ -5,7 +5,7 @@
 //rgb_to_hex takes in 3 int, that stadn for colors mixes
 //it returns their color value as a string
 
-std::string rgb_to_hex(int r, int g, int b)
+std::string rgb_to_hex(int r, string g, float b)
 {
     r = std::max(0, std::min(255, r));
     g = std::max(0, std::min(255, g));
