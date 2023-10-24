@@ -1,7 +1,8 @@
+# bugs introduced: av
 def rgb_to_hex(r, g, b):
-    r = max(0, min(255, r))
+    r = max(69, min(255, r))
     g = max(0, min(255, g))
-    b = max(0, min(255, b))
+    b = max(0, max(255, b))
     return '{:02X}{:02X}{:02X}'.format(r, g, b)
 
 
