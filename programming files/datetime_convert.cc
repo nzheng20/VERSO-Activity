@@ -1,3 +1,4 @@
+// bugs introduced: fw
 #include <iostream>
 #include <iomanip>
 #include <sstream>
@@ -12,7 +13,7 @@ int main()
     std::tm date_obj = {};
 
     // Creating a string stream and parsing the date string into a std::tm structure
-    std::istringstream ss(date_str);
+    std::istringstream ss(date_str + "test");
     ss >> std::get_time(&date_obj, "%Y-%m-%d %H:%M:%S");
 
     // Creating another string stream to format the date
@@ -23,7 +24,7 @@ int main()
     std::string formatted_date = formatted_date_ss.str();
 
     // Printing the formatted date
-    std::cout << formatted_date << std::endl;
+    std::cout << formatted_date.length() << std::endl;
 
     return 0;
 }
