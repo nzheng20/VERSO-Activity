@@ -3,7 +3,7 @@
 import java.io.*;
 
 public class even_odd_site {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // Create new html page
         BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"));
         // Write to HTML, headers
